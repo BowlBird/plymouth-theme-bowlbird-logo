@@ -9,14 +9,14 @@
     };
   };
 
-  outputs = { self, nixpkgs, flake-utils, flake-compat}:
-    let allSystems = 
+  outputs = { self, nixpkgs, flake-utils, flake-compat }:
+    let allSystems =
       flake-utils.lib.eachDefaultSystem (system:
         let
           pkgs = nixpkgs.legacyPackages.${system};
-          
-          package = 
-            pkgs.stdenv.mkDerivation{
+
+          package =
+            pkgs.stdenv.mkDerivation {
               pname = "plymouth-theme-bowlbird-logo";
               version = "1.0.0";
 
@@ -38,12 +38,12 @@
           defaultPackage = package;
         }
       );
-    in 
+    in
     {
       packages = allSystems.packages;
-      defaultPackage = allSystems.defaultPacakge;
+      defaultPackage = allSystems.defaultPackage;
       overlay = final: prev: {
-        plymouth-theme-bowlbird-logo = 
+        plymouth-theme-bowlbird-logo =
           allSystems.packages.${final.system}.plymouth-theme-bowlbird-logo;
       };
     };
