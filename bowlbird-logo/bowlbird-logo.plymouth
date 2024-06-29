@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=bowlbird-logo
+Description=BowlBird Logo theme
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/bowlbird-logo
+ScriptFile=/usr/share/plymouth/themes/bowlbird-logo/bowlbird-logo.script

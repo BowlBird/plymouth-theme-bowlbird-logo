@@ -1,0 +1,23 @@
+License: Creative Commons Attribution-NonCommercial-ShareAlike (CC BY-NC-SA)
+
+This Plymouth theme is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike License (CC BY-NC-SA). Please carefully review the following terms and conditions:
+
+1. You are free to use, modify, and distribute this Plymouth theme for non-commercial purposes, such as personal use or educational purposes.
+
+2. When sharing or distributing this theme, you must provide appropriate credit to the original author (insert your name or preferred attribution here) by prominently displaying the following information:
+   - Theme Name: monochrome-tux-plymouth-theme
+   - Author: atom
+   - Source: https://www.instagram.com/nfratom/
+
+3. Commercial use of this Plymouth theme is strictly prohibited without obtaining explicit permission from the author.
+
+4. Any modifications or derivatives of this theme must be released under the same license terms (CC BY-NC-SA) and include proper attribution to the original author.
+
+5. If you distribute a modified version of this theme, you must make the source code available and distribute it under the same license terms (CC BY-NC-SA).
+
+By using, modifying, or distributing this Plymouth theme, you agree to abide by the terms and conditions of the CC BY-NC-SA license.
+
+
+If you have any questions or need further permissions, please contact the author at: email : nfratom@gmail.com, instagram : @nfratom
+
+
