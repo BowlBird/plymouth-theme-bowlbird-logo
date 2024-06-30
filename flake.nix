@@ -32,6 +32,9 @@
       defaultPackage = allSystems.defaultPackage; 
 
       overlay = final: prev: {
+        boot.plymouth.themePackages = prev.boot.plymouth.themePackages // {
+          bowlbird-logo = allSystems.defaultPackage;
+        };
         plymouth-theme-bowlbird-logo = 
           allSystems.packages.${final.system}.plymouth-theme-bowlbird-logo;
       };
