@@ -3,12 +3,12 @@
   
   inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
-  outputs = { self, nixpkgs }: {
+  outputs = { self, nixpkgs, ... }: {
     defaultPackage.x86_64-linux = 
     with import nixpkgs { system = "x86_64-linux"; };
     stdenv.mkDerivation {
       pname = "plymouth-theme-bowlbird-logo";
-      version = "2.0.0";
+      version = "1.0.0";
       src = ./bowlbird-logo;
       dontBuild = true;
       installPhase = ''
