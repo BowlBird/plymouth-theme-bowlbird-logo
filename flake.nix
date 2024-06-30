@@ -11,7 +11,7 @@
       pkgs= nixpkgs.legacyPackages.${system};
 
     in {
-      packages.default = pkgs.stdenv.mkDerivation {
+      packages.${system}.default = pkgs.stdenv.mkDerivation {
         pname = "plymouth-theme-bowlbird-logo";
         version = "2.0.0";
         src = ./bowlbird-logo;
