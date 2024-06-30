@@ -14,8 +14,7 @@
       installPhase = ''
         mkdir -p $out/share/plymouth/themes/bowlbird-logo
         cp * $out/share/plymouth/themes/bowlbird-logo
-        chmod +x $out/share/plymouth/themes/bowlbird-logo/bowlbird-logo.plymouth $out/share/plymouth/themes/bowlbird-logo/bowlbird-logo.script
-        sed -i "s@/usr/@$out/@" $out/share/plymouth/themes/bowlbird-logo/bowlbird-logo.plymouth
+        find $out/share/plymouth/themes/ -name \*.plymouth -exec sed -i "s@\/usr\/@$out\/@" {} \;
       '';
     };
   };
