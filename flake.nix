@@ -9,9 +9,9 @@
     let
       system = "x86_64-linux";
       pkgs= nixpkgs.legacyPackages.${system};
-    in
-    {
-      pkgs.stdenv.mkDerivation = {
+
+    in {
+      packages.default = pkgs.stdenv.mkDerivation {
         pname = "plymouth-theme-bowlbird-logo";
         version = "1.0.0";
         src = ./bowlbird-logo;
