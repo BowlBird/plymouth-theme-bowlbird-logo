@@ -10,7 +10,7 @@
       pname = "plymouth-theme-bowlbird-logo";
       version = "2.0.0";
       src = ./bowlbird-logo;
-
+      dontBuild = true;
       installPhase = ''
         mkdir -p $out/share/plymouth/themes/bowlbird-logo
         cp * $out/share/plymouth/themes/bowlbird-logo
